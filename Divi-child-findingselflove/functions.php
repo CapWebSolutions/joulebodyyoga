@@ -228,3 +228,4 @@ class Example_Widget extends WP_Widget
   }
 }
 // register_widget("Example_Widget");
+// 
