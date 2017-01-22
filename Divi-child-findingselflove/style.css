@@ -1,0 +1,908 @@
+/*
+	Theme Name: Divi Child Finding Selflove
+	Theme URI:  https://capwebsolutions.com/
+	Description: Divi child theme for findingselflove.com.
+	Author: Cap Web Solutions
+	Author URI: https://capwebsolutions.com/
+	Template: Divi
+	Version: 1.0.1
+
+	License: GPL-2.0+
+	License URI: http://www.opensource.org/licenses/gpl-license.php
+*/
+
+
+
+/* Imports
+------------------------------------------------------- */
+@import url("../Divi/style.css");
+@import url(//fonts.googleapis.com/css?family=Quicksand:400,300,700);
+@import url(//fonts.googleapis.com/css?family=Allura&subset=latin,latin-ext);
+
+
+/* =Theme customization starts here
+------------------------------------------------------- */
+
+/* Note: KNE is tied back to the original name of the site katandevie.com */
+
+/**
+ * Get rid of most of that jerkiness on the front page slider. 
+ * ref: https://soliloquywp.com/docs/debugging-soliloquy/
+ */
+.soliloquy-slides, .soliloquy-item { margin: 0 !important; padding: 0 !important; }
+
+/*---------- [Load The KNE specific Fonts] ----------
+ * Re: http://divisoup.com/adding-custom-fonts-with-css/
+ * Google fonts loaded in <head> via Divi Theme Options | Integration
+ */
+@font-face {
+    font-family: "Apple Chancery";
+    src: url('fonts/apple-chancery.ttf');
+}
+.quick h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Quicksand',Arial,sans-serif;
+}
+
+.allura,
+.allura-text,
+.allura-text>h1,
+.allura-text>p,
+.allura-textbig>p>span,
+.allura-textbig>p,
+.allura-textbig>span,
+.allura-textnotbig>p>span,
+.allura-textnotbig>p {
+  font-family: 'Allura',cursive;
+  line-height: normal;
+}
+
+#post-25595 > div > div.et_pb_section.et_pb_section_44.et_section_regular > div > div > div > p:nth-child(1) > a,
+#post-25595 > div > div.et_pb_section.et_pb_section_44.et_section_regular > div > div > div > p:nth-child(1) > a:hover {
+/*.allura-textnobig>.et_pb_text_18>p a,
+.allura-textnobig>.et_pb_text_18>p a:hover  {*/
+ text-decoration: none;
+ color: #bbce32 !important;
+}
+
+
+.text-upper {
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+.text-cap {
+    text-transform: capitalize;
+    font-size: 30px;
+    text-align: center;
+}
+
+.kne-pink {
+  color: #edd5d1;
+}
+.kne-blue {
+  color: #9ad2dd;
+}
+.kne-orange {
+  color: #faa647;
+}
+.kne-green {
+  color: #bbce32;
+}
+.kne-black {
+  color: #4c4d52;
+}
+
+
+
+.allura-text>p {
+    font-size: 24px;
+    line-height: 1.4;
+}
+.allura-textbig>p,
+.allura-textbig>span,
+.allura-textbig>p>span {
+    font-size: 47px;
+}
+.allura-textnotbig>p,
+.allura-textnotbig>p>span {
+    font-size: 65px;
+    padding-bottom: 10px;
+}
+
+.apple,
+.apple-button,
+.apple-button>.green,
+.apple-button>.white,
+.apple h2,
+#you-deserve h2,
+#bio-text,
+#bio-text p,
+#gform_1 .gform_body,
+#gform_submit_button_1,
+#footer-nav-menu {
+    font-family: "Apple Chancery", Arial, serif;
+		font-size: 16px;
+    border-radius: 4px;
+    letter-spacing: 3px;
+}
+
+.blog-page-featured-intro,
+.blog-page-featured-intro h2 {
+    font-family: "Apple Chancery", Arial, serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: none;
+}
+
+#footer-bottom>a {
+  color: #4d4c52 !important;
+  text-decoration: none;
+}
+#bio-text>p {
+  font-size: 24px;
+}
+.apple-time>h2 {
+				font-size: 30px;
+				text-transform: none;
+				color: #fff;
+}
+
+#you-deserve>h2 {
+  padding-top: 15px;
+	text-transform: none;
+  font-size: 36px;
+}
+#you-deserve {
+  border-radius: 4px;
+  width: 98%;
+  text-align: center;
+}
+#you-deserve>p {
+  padding: 10px 20px 15px;
+}
+body {font-family: 'Quicksand', sans-serif;}
+p {font-family: 'Quicksand', sans-serif;font-size: 16px}
+h1 {font-size: 30px; text-transform: capitalize}
+h2 {font-size: 28px; text-transform: capitalize}
+
+.allura>h2 {font-size: 28px; text-transform: capitalize}
+
+.social-footer-name-left,
+.social-footer-name-right {
+  font-family: "Apple Chancery", Arial, serif;
+  font-size: 16px;
+  border-radius: 4px;
+  letter-spacing: 3px;
+  color: #4c4d52;
+  margin-bottom: 2px;
+  text-align: center;
+  padding-left: 25px;
+}
+
+
+/*
+ * General Button Styles
+ */
+ .kne-read-more-button,
+ .kne-read-more-button a,
+ .kne-read-more-button a:hover,
+.et_pb_button>.apple-button-read-more,
+.et_pb_button>.apple-button-read-more a,
+.et_pb_button>.apple-button-read-more a:hover,
+.et_pb_button>.kne-read-more-button,
+.et_pb_button>.kne-read-more-button a,
+.et_pb_button>.kne-read-more-button a:hover {
+  /*
+   * white ( #fff ) text on orange ( #faa647 ) background
+   */
+      font-family: "Apple Chancery", Arial, serif;
+  		font-size: 16px;
+      color: #fff !important;
+      border: 3px solid #faa647 !important;
+      background: #faa647 !important;
+      border-radius: 4px;
+      letter-spacing: 3px;
+      text-align: center;
+}
+.kne-buy-now-button, .kne-buy-now-button a {
+  /*
+   * white ( #ffffff ) text on green ( #bbce32 ) background
+   */
+      font-family: "Apple Chancery", Arial, serif;
+  		font-size: 16px;
+      color: #ffffff;
+      border: 3px solid #bbce32;
+      background: #bbce32;
+      border-radius: 4px;
+      letter-spacing: 3px;
+      text-align: center;
+}
+.kne-learn-more-button, .kne-learn-more-button a, .kne-learn-more-button a:hover,
+.kne-consultation-button, .kne-consultation-button a,  .kne-consultation-button a:hover,
+.kne-sign-up-button, .kne-sign-up-button a, .kne-sign-up-button a:hover,
+.apple-button-green a,
+.apple-button-green.et_pb_button_0 a,
+.et_pb_button.apple-button-green.et_pb_button_0 a {
+  /*
+   * green ( #bbce32 ) text on white ( #fff ) background
+   */
+    font-family: "Apple Chancery", Arial, serif;
+	  font-size: 16px;
+    color: #bbce32;
+    border: 3px solid #bbce32;
+    background: #ffffff;
+    border-radius: 4px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+div.et_pb_section.et_pb_section_4.et_section_regular > div.et_pb_row.et_pb_row_14 > div > div > a.kne-about-us-button, 
+.kne-about-us-button, 
+.kne-about-us-button a, 
+.kne-about-us-button a:hover {
+  /*
+   * green ( #bbce32 ) text on white ( #fff ) background
+   */
+    font-family: "Apple Chancery", Arial, serif;
+    font-size: 16px;
+    color: #bbce32;
+    border: 3px solid #bbce32;
+    background: #ffffff;
+    border-radius: 4px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.apple-button-white {
+    color: #fff;
+    border: 3px solid #4c4d52;
+    background: #4c4d52;
+}
+div.et_pb_section.et_pb_section_9.et_section_regular > div > div > div > p:nth-child(1) > a:hover {
+  color: #bbce32 !important;
+  text-decoration: none !important;
+}
+
+
+/**
+ * Header tweaks
+ */
+#main-header > div.container.clearfix.et_menu_container {
+    /*background-image: url(http://fsl-nokat.dev/wp-content/uploads/background-texture-1200.png);*/
+    /*background-image: url(http://fsl-nokat.dev/wp-content/uploads/background-texture-crop.png);*/
+}
+
+/* 
+ * Navifgation tweaks for recipe CPTs 
+ */
+
+article.cws_recipe span.nav-previous,
+article.cws_recipe span.nav-next {
+  margin-top: 25px; 
+}
+.nav-single a {
+  font-weight: 700 !important;
+}
+
+/* Custom stuff for KNE Gravity Forms */
+
+
+/* GF 1 subscription form
+ * ref: http://www.ryanrudolph.com/creating-a-horizontal-gravity-form-using-css/
+ */
+#gform_1 > .gform_footer {
+    display: inline-block;
+    /*padding: 0.85em 0 0.625em;*/
+    width: 20%;
+}
+
+#gform_1 .gform_body {
+    display: inline-block;
+    float: left;
+    width: 80%;
+    background-color: #fff;
+		font-size: 18px;
+        /*color: #bbce32;*/
+}
+
+#gform_submit_button_1 {
+    border: 3px solid #bbce32;
+    border-radius: 4px;
+    color: #bbce32;
+    background-color: #fff;
+		font-size: 18px;
+    width: 130px;
+    text-indent: .25em;
+		text-align: left;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 42px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+    /*color: #A9A9BB;*/
+    line-height: 1.1em;
+}
+
+/* sign up button */
+input[type=text], input[type=password], input[type=tel], input[type=email], input.text, input.title, textarea, select,
+input[type=text]:focus  {
+    /*padding: 0 2px;*/
+    border: 3px solid #bbce32;
+    color: #bbce32;
+    background-color: #fff;
+    border-radius: 4px;
+    letter-spacing: 3px;
+}
+/* Placeholder text */
+
+/****/
+
+.heart,
+.heartb {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.heart:after {
+    display: inline-block;
+    margin: 0 0 8px 20px;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: #edd5d1;
+    width: 33%;
+}
+.heart:before {
+    display: inline-block;
+    margin: 0 20px 8px 0;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: #edd5d1;
+    width: 33%;
+}
+.heart img,
+.heartb img {
+	vertical-align: middle;
+}
+
+.heartb:after {
+    display: inline-block;
+    margin: 0 0 8px 20px;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: #9ad2dd;
+    width: 33%;
+}
+.heartb:before {
+    display: inline-block;
+    margin: 0 20px 8px 0;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: #9ad2dd;
+    width: 33%;
+}
+
+.heartb-tall:after,
+.heartb-tall:before {
+    display: inline-block;
+    /*position: absolute;*/
+    /*float: left;*/
+    width: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: #9ad2dd;
+    height: 100%;
+}
+.heartb-tall:before {
+  margin-bottom: 5px;
+}
+.heartb-tall:after {
+  margin-top: 5px;
+}
+
+#balanced-lifestyle-image {
+  margin-right: 60px;
+}
+#positive-body-image {
+  margin-left: 60px;
+}
+
+/* Header Nav */
+
+#top-menu-nav ul, 
+#header-primary-nav ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  line-height: 10px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+#top-menu-nav ul {
+  margin: 0 0 30px 0;
+}
+#header-primary-nav ul {
+  margin: 60px 0 0;
+}
+
+#top-menu-nav ul li, 
+#header-primary-nav ul li {
+    padding: 0 8px;
+}
+
+#top-menu-nav li a, 
+#header-primary-nav li a {
+  float: left;
+  border-radius: 4px;
+  margin: 0 2px;
+  background-color: #fff;
+  color: red;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#top-menu-nav li a:hover, 
+#header-primary-nav li a:hover {
+ background-color: #bbce32;
+ text-decoration: none;
+}
+
+#top-menu-nav li a, 
+#header-primary-nav li a {
+ display: block;
+ color: #4c4d52;
+ background-color: #fff;
+ text-align: center;
+ padding: 5px 3px;
+ text-decoration: none;
+}
+#top-menu-nav li a {
+ padding-top: 5px;
+ padding-bottom: 5px !important;
+}
+
+#header-primary-nav li a {
+ padding: 5px 3px;
+}
+
+#top-menu > li:last-child {
+    padding-right: 10px !important;
+}
+
+#top-menu-nav li a:hover:not(.active), 
+#header-primary-nav li a:hover:not(.active) {
+ background-color: #bbce32;
+}
+
+#top-menu-nav .active, 
+#header-primary-nav .active {
+ background-color: #faa647;
+}
+
+#top-menu-nav, 
+#header-primary-nav-icons {
+/*  display: flex;
+  justify-content: center;
+  margin-top: 35px;*/
+  display:table-cell; vertical-align: middle; float:none !important;
+}
+
+#et-top-navigation {
+  padding-left: 225px !important;
+}
+/* Custom Menu Footer Nav */
+
+ul#menu-footer-2-col li {
+      display: inline-block;
+      float: left;
+      width: 100px;
+}
+
+ul#menu-footer-2-col li:nth-child(odd) {
+    float: left;
+    /*margin-right: 10px;*/
+}
+ul#menu-footer-2-col li::nth-child(even) {
+    float: right;
+}
+
+/* Custom Menu Footer Nav in Text Widget*/
+
+ul#menu-footer-2-col-text li {
+      display: inline-block;
+      float: left;
+      width: 100px;
+}
+
+ul#menu-footer-2-col-text li:nth-child(odd) {
+    float: left;
+    margin-right: 10px;
+}
+ul#menu-footer-2-col-text li::nth-child(even) {
+    float: right;
+}
+
+
+#footer-widgets .footer-widget li a {
+       color: #4c4d52;
+}
+#footer-widgets .footer-widget li a:hover,
+#footer-widgets .footer-widget li a:active {
+     color: #4c4d52; 
+     font-weight: 700;
+}
+
+#footer-nav-menu > #nav_menu-4 {
+  text-align: center;
+  margin-left: 307px;
+}
+/* Instagram feed 6 wide */
+#instagram-6-wide {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    margin: 0 15px 20px;
+}
+
+.footer-widget > ul#menu-footer-2-col {
+  list-style-type: none !important;
+  padding:0; 
+  margin:0;
+}
+
+#footer-widgets .footer-widget li:before {
+display: none; 
+} 
+
+/* Hide top nav bar */
+/*#et-top-navigation { display: none; }*/
+
+/* Hide lowest footer bar */
+/*#main-footer { display: none; } */
+
+.alignleft {
+	float: left;
+	text-align: left;
+	font-size: 12px;
+}
+
+.alignright {
+	float: right;
+	text-align: right;
+	font-size: 12px;
+}
+
+#kne-footer-info,
+#kne-footer-info>p {
+	padding: 5px 0 !important;
+}
+
+#kne-footer-info a {
+	font-weight: 700;
+	color: #9ad2dd;
+}
+
+#kne-footer-info a:hover {
+	opacity: 0.7;
+	color: #9ad2dd;
+}
+
+#footer-social-icons2 a {
+  display: block;
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    line-height: 70px;
+    margin-left: 20px;
+}
+
+
+.et_pb_social_media_follow li a.icon::before {
+	width: 80px;
+	height: 80px;
+	color: #fff;
+	font-size: 50px;
+	line-height: 70px;
+}
+
+
+/* Front page post title highlight boxes */
+.post-highlight {
+  width: 250px;
+  border: 2px solid #edd5d1;
+  padding: 20px 0 30px 10px;
+  margin-left: 20px;
+  margin-top: -40px;
+  text-align: left;
+  background-color: #fff;
+  line-height: 40%;
+}
+
+.post-highlight h2 {
+  text-transform: uppercase;
+  font-size: 1.0em;
+  color: #000;
+}
+
+.post-highlight .subtitle {
+  font-size: .9em;
+  color: #4c4d52;
+}
+
+.buy-now-button a {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+/*
+ Sitemap / 404 page
+ */
+.fsl_sitemap ul li, .fsl_sitemap li a,
+.fsl_cpts ul li,
+.fsl_recipes ul li,
+.fsl_pages, .fsl_pages ul li, .fsl_pages li a {
+    padding: 0 0 0 5px;
+    line-height: 26px;
+    list-style-type: none !important;
+    font-weight: 700;
+}
+.fsl_sitemap .fsl_pages ul li, .fsl_pages li a {
+    padding: 0;
+}
+
+/* Tweak style of login form */
+.et_pb_newsletter_form p input {
+	width: 100%;
+	padding: 14px 4% !important;
+	border: none !important;
+	-webkit-border-radius: 4px !important;
+	-moz-border-radius: 4px !important;
+	border-radius: 4px !important;
+	color: #bbce32;
+	background-color: #fff;
+	font-size: 14px;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+a.more-link {
+    font-family: "Apple Chancery", Arial, serif;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #faa647;
+    background: #faa647;
+    border-radius: 4px;
+    text-align: center;
+    padding: 0 30px;
+    width: 25%;
+
+}
+
+.et_pb_post >p {
+  margin-top: 20px;
+}
+
+
+#front-recipe-post-excerpt-right> article > div > p,
+#front-recipe-post-excerpt-left> article > div > p  {
+  display: none;
+}
+div.et_pb_slide_image img {
+  height: 150px !important;
+  /*width: 310px !important;*/
+  vertical-align: top;
+}
+div.et_pb_slide_description h2 {
+  font-size: 20px !important;
+}
+
+div.et_pb_slide_content p {
+  font-size: 14px;
+}
+
+div#front-recipe-post-excerpt-left img,
+div#front-recipe-post-excerpt-right img {
+    height: 300px !important;
+    vertical-align: top;
+  }
+div#front-recipe-post-excerpt-left h2.entry-title,
+div#front-recipe-post-excerpt-right h2.entry-title,
+div#front-recipe-post-excerpt-left .et_pb_post,
+div#front-recipe-post-excerpt-right .et_pb_post {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+
+.et_pb_post_slider.et_pb_slider .et_pb_slide_content {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+
+.cws_recipe > .et_main_title > h1 {
+  /*margin-top: 50px; */
+  font-weight: 700;
+}
+
+.recipe-section-label {
+  font-weight: 700 !important;
+  padding: 0;
+}
+.recipe-section-data {
+  font-weight: normal;
+}
+
+/* Custom stuff for FSL  WooCommerce*/
+
+/* Center Product title and set to Title case on shop and single product pages */
+.product-type-simple > a > h3 {
+  text-align: center;
+  text-transform: none;
+}
+div.summary.entry-summary > h1 {
+  text-transform: none;
+}
+
+a, a:focus, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.woocommerce span.onsale,
+.woocommerce-page span.onsale {
+  background: #faa647 !important;
+}
+
+/* Get rid of cart on primary nav */
+.et-cart-info { display:none; }
+
+
+.single-product .product .single_add_to_cart_button.button,
+.single-product .product .single_add_to_cart_button.button:hover,
+.woocommerce .product .add_to_cart_button.button,
+.woocommerce .product .add_to_cart_button.button:hover {
+  border-radius: 4px;
+  background: #bbce32 !important;
+  color: #fff;
+}
+
+div.woocommerce-message a.button.wc-forward {
+  color: #bbce32 !important;
+}
+
+a.button.checkout-button.button.alt.wc-forward {
+  background-color: #bbce32;
+}
+
+/* gform placeholders*/
+::-webkit-input-placeholder { color:#bbce32; }
+:-moz-placeholder { opacity: 1; color:#bbce32; } /* Firefox 18- */
+::-moz-placeholder { opacity: 1; color:#bbce32; } /* firefox 19+ */
+:-ms-input-placeholder { color:#bbce32; } /* ie */
+input:-moz-placeholder { color:#bbce32; }
+
+
+
+/*
+* Media Queries
+*/
+
+@media only screen and ( min-width: 981px ) { 
+
+  /* Vertically center the top navigation */
+  #et-top-navigation { 
+    display:table-cell !important; 
+    vertical-align: middle !important; 
+    float:none !important;
+  }
+  
+  .container { 
+    display:table; 
+  }
+
+  .et_header_style_left #et-top-navigation, .et_header_style_split #et-top-navigation {
+    padding-top: 40px !important;
+  }
+
+  /* Right align the contents of the top navigation area */
+/*  #et-top-navigation { text-align:right; }
+  #et-top-navigation > * { text-align:left; }
+  #top-menu-nav, #et_top_search { float:none !important; display:inline-block !important}
+  #et_top_search { vertical-align: top !important; margin-top:3px }*/
+
+}
+
+
+
+@media screen and (max-width: 980px) {
+  .et_pb_row.et_pb_row_19 {
+    display: none;
+  }
+  .search #left-area,
+  .archive #left-area {
+      -moz-column-count: 2;
+          column-count: 2;
+      -moz-column-gap: 60px;
+          column-gap: 60px;
+  }
+  a.more-link {
+    width: 100% !important;
+  }
+
+  #footer-nav-menu>#nav_menu-4 {
+    text-align: center;
+    margin-left: 100%;
+  }
+
+
+.container {
+  width: 100% !important;
+  max-width: 980px;
+}
+  #main-header > div.container.clearfix.et_menu_container {
+    max-width: 100% !important;
+  }
+  #et_main-area {
+    width: 100% !important;
+  }
+  div.et_pb_section > div.et_pb_row {
+    width: 100% !important;
+  }
+  .et_pb_dpblog_portfolio_1 .et_pb_portfolio_item h2 {
+    font-size: 18px !important;
+  }
+}
+
+@media all and (max-width: 768px) {
+    /* Shop Module (WooCommerce responsive styling for tablet starts from max-width: 768px ) */
+    /* woocommerce cart */
+    /*Make dropdown links appear inline*/
+  #top-menu-nav ul, 
+  #header-primary-nav ul {
+      position: static;
+      display: none;
+    }
+    /*Create vertical spacing*/
+  #top-menu-nav li, 
+  #header-primary-nav li {
+      margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+  #top-menu-nav ul li, 
+  #top-menu-nav li a, 
+  #header-primary-nav ul li, 
+  #header-primary-nav li a {
+      width: 100%;
+    }
+
+  #footer-widgets > div:nth-child(2) > div > div {
+    height: 0px;
+  }
+
+  .search #left-area,
+  .archive #left-area {
+      -moz-column-count: 1;
+          column-count: 1;
+  }
+  .search .et_pb_post.format-audio .et_audio_content,
+  .archive .et_pb_post.format-audio .et_audio_content{
+      margin: 0;
+  }
+  .search #left-area .et_pb_post.format-audio .et_audio_container .mejs-controls div.mejs-time-rail,
+  .archive #left-area .et_pb_post.format-audio .et_audio_container .mejs-controls div.mejs-time-rail,
+  .search #left-area .et_pb_post.format-audio .et_audio_container .mejs-controls .mejs-time-rail .mejs-time-total,
+  .archive #left-area .et_pb_post.format-audio .et_audio_container .mejs-controls .mejs-time-rail .mejs-time-total{
+      min-width: 300px!important;
+      width: 300px!important;
+  }
+}
